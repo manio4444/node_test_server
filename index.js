@@ -3,6 +3,8 @@ const server = express();
 
 server.get('/', (req, res) => {
   res.send('helo word');
+  console.log('cached');
+  // console.log(req);
 });
 
 server.listen (8888, () => {
