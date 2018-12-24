@@ -7,6 +7,8 @@ server.get('/', (req, res) => {
   // console.log(req);
 });
 
-server.listen (8888, () => {
-  console.log('Server started on porrt 8888');
+serverListerPort = 80;
+
+server.listen (serverListerPort, () => {
+  console.log(`Server started on port ${serverListerPort}`);
 });
