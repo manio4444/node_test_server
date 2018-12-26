@@ -1,10 +1,12 @@
 const express = require('express');
 const server = express();
+const fs = require('fs');
 
 server.get('/', (req, res) => {
   res.send('helo word');
-  console.log('cached');
+  console.log(req.headers);
   // console.log(req);
+  // fs.writeFile('lastRequest.json', JSON.stringify(req), 'utf8');
 });
 
 serverListerPort = 80;
